@@ -7,6 +7,6 @@ if(isset($_GET['key']) && $_GET['key'] == $api_key){
   header('Content-disposition: attachment; filename=book.hpub');
   readfile('temp.hpub');
 } else {
-  die(json_encode(array('isError' => '1', 'code' => '-1', 'message' => 'invalid API key', 'size' => '0')));
+  die(json_encode(array('isError' => 1, 'code' => 500, 'message' => 'invalid API key', 'size' => 0)));
 }
 ?>
