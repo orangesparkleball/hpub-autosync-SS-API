@@ -28,14 +28,13 @@
       .message{
       	border:6px double #E8D9AC;
       	width:500px; 
-        	padding: 15px;
+        padding: 15px;
       	text-align:center;
       	margin:200px auto;
       	-moz-border-radius: 15px;
         -webkit-border-radius: 15px;
       	-khtml-border-radius: 15px;
       }
-
 
     </style>
   </head>

@@ -4,9 +4,4 @@ ErrorDocument 404 /index.php?404
 RewriteEngine On
 RewriteRule \.git - [F,L]
 
-RewriteBase /
-RewriteCond %{HTTP_HOST} !^.*(localhost)|(ubuntu).*$ [NC]
-RewriteCond %{THE_REQUEST} ^.*/index\.php
-RewriteRule ^(.*)index\.php$ /$1 [R=301]
-
 
