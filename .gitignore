@@ -1,0 +1,12 @@
+#mac ignores
+:2e*
+._*
+*~
+.AppleDouble*
+.DS_*
+-.save
+
+#IDE ignores
+*.komodoproject
+.komodotools
+*.esproj
