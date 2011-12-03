@@ -1,0 +1,8 @@
+The API has two available requests:
+First, a request to see if there is a content update. The request looks like: http://osb.techyeti.com/checkforupdates.php?key=1f6a584bed23f31311a0c74cd1887382
+where the api_key is generated from: $api_key = md5(md5('This is a super top secret string!').md5(gmdate('m/d/y h'))); for a little security. Note: the api key is only valid for an hour.
+The error JSON response will look like {"isError":1,"code":500,"message":"invalid API key","size":0} and the success response looks like {"isError":0,"code":1,"message":"An update is available","size":210173}. Notice the success response informs the app that an update is available and provides the filesize in bytes.
+
+The second request is something like: http://osb.techyeti.com/downloadupdate.php?key=1f6a584bed23f31311a0c74cd1887382. If the api key is valid and an update is available, it is made available for download. Currently, you can download the default hpub that comes with the baker project.
+
+The above URLs do work and for testing from your browser, you can get the currently active api key here: http://osb.techyeti.com/getkey.php
